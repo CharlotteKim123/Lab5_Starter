@@ -30,3 +30,12 @@ export function isHexColor(color) {
   const colorRegex = /^\#?[A-Fa-f0-9]{3}([A-Fa-f0-9]{3})?$/;
   return colorRegex.test(color);
 }
+
+
+test('isPhoneNumber is true', () => {
+    expect((1)661-313-8771).toBe(true);
+});
+
+test('isEmail is true', () => {
+    expect(chk027@ucsd.edu).toBe(true);
+});
